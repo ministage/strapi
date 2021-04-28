@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookings",
+  "info": {
+    "name": "Booking"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "from": {
+      "type": "datetime"
+    },
+    "to": {
+      "type": "datetime"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "bookings"
+    },
+    "room": {
+      "via": "bookings",
+      "model": "room"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
