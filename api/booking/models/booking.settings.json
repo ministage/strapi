@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "bookings",
   "info": {
-    "name": "Booking"
+    "name": "Booking",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -23,8 +24,8 @@
       "via": "bookings"
     },
     "room": {
-      "via": "bookings",
-      "model": "room"
+      "model": "room",
+      "via": "bookings"
     },
     "description": {
       "type": "text"

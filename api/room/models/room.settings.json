@@ -25,8 +25,8 @@
       "type": "string"
     },
     "bookings": {
-      "collection": "booking",
-      "via": "room"
+      "via": "room",
+      "collection": "booking"
     },
     "images": {
       "collection": "file",
